@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 300px;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding:8px;
+  background-image:url(file:///C:/Users/HP%20LAPTOP/Desktop/bgimg.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 80px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: cursive;
+}.header {
+    width: 100%;
+    background-image:url(file:///C:/Users/HP%20LAPTOP/Desktop/lolo.JPG);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:white;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+margin-top:20px;
+margin-bottom:30px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:#C3B1E1;
+  color:black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 85%;
+  height: 60%;
+padding-left: 10px;
+margin-top:60px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+margin-top:50px;
+margin-bottom:100px;
+}
+/* Fake image */
+.fakeimg {
+  width:10px;
+  padding:10px;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+margin-top:40px;
+margin-bottom:40px;
+background-color:white;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sale{
+padding:20px;
+float:center;
+width:30px;
+height:20px;
+}
+/* Add a card effect for articles */
+.card {
+  background-color:#e6c6f5;
+  padding: 50px;
+width:90%;
+height:20%;
+  margin-top:10px;
+}
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background:#DA70D6;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+margin:10px;
+  }
+}
+</style>
+</head>
+<body>
+<img class="sticky" src="file:///C:/Users/HP%20LAPTOP/Desktop/logohere.JPG" alt="logo">
+
+<div class="header">
+</div>
+
+<div class="topnav">
+  <a href="#">category</a>
+  <a href="#">brands</a>
+  <a href="#">most popular</a>
+  <a href="#" style="float:right">signup</a>
+  <div class="search">
+                    <input type="text" class="search-box" placeholder="search brand, product" style="float:right">
+                    <button class="search-btn" style="float:right">search</button>
+                </div>
+</div>
+<h1><u>Category</u></h1>
+<div class="row">
+  <div class="column">
+    <img src="file:///C:/Users/HP%20LAPTOP/Desktop/skin.JPG" alt="Snow" style="width:90%">
+  </div>
+  <div class="column">
+    <img src="file:///C:/Users/HP%20LAPTOP/Desktop/hairc.JPG" alt="Forest" style="width:90%">
+  </div>
+  <div class="column">
+    <img src="file:///C:/Users/HP%20LAPTOP/Desktop/new.JPG" alt="Mountains" style="width:90%">
+  </div>
+</div>
+<h1><u>FEATURED</u></h1>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="file:///C:/Users/HP%20LAPTOP/Desktop/aqua.jpg">
+      <img src="file:///C:/Users/HP%20LAPTOP/Desktop/aqua.jpg" alt="pro1" width="600" height="400">
+    </a>
+    <div class="desc">	
+<a href="file:///C:/Users/HP%20LAPTOP/Desktop/anve/cart.html" title="aqua"><i><b>Aqualogica Everyday Glow+ Combo</b></i><hr></a>
+<b>&#x20B9;546</b><br>Aqualogica<br>
+<a href="file:///C:/Users/HP%20LAPTOP/Desktop/anve/cart.html" title="aqua"><i><u>view product details</u></i></div></a>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="file:///C:/Users/HP%20LAPTOP/Desktop/garnier.jpg">
+      <img src="file:///C:/Users/HP%20LAPTOP/Desktop/garnier.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">	
+<b><i>Garnier Bright Complete VITAMIN C Booster Face Serum, 30 ml</b></i><hr><b>&#x20B9;430</b><br>Garnier<br><i><u>view product details</u></i></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="file:///C:/Users/HP%20LAPTOP/Desktop/mama.jpg">
+      <img src="file:///C:/Users/HP%20LAPTOP/Desktop/mama.jpg" alt="mamaearth" width="600" height="400">
+    </a>
+    <div class="desc"><b><i>Mamaearth Rice Water & Niacinamide Face Wash</b></i><hr><b>&#x20B9;250</b><br>Mamaearth products<br><i><u>view product details</u></i></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="file:///C:/Users/HP%20LAPTOP/Desktop/mini.jpg">
+      <img src="file:///C:/Users/HP%20LAPTOP/Desktop/mini.jpg" alt="Minimalist" width="600" height="400">
+    </a>
+    <div class="desc"><b><i>Minimalist Daily Skincare Routine For Oily & Acne Prone Skin CSMS Combo
+(50ml)</b></i><hr><b>&#x20B9;1300</b><br>Minimalist.co<br><i><u>view product details</u></i></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+</div>
+  </div>
+</div>
+<div class="footer">
+  <h1>About us</h1>
+<p>About<br>
+Our values<br>
+Privacy policy<br>
+Terms & conditions<br>
+Corporate Information<br>
+
+Help<br>
+Knowledge<br>
+FAQs<br>
+Privacy policy<br>
+Return & refund policy<br>
+Contact us<br>
+Track order<br>
+Copyright © 2023,cocosphere.
+</p>
+</div>
+
+</body>
+</html>
